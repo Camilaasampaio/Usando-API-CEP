@@ -1,0 +1,87 @@
+body{
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 5px;
+    
+
+}.cadastro{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(30, 70, 70);
+    flex-wrap: wrap;
+    color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 50px;
+    font-size: 15px;
+    border-radius: 15px;
+    
+}
+
+
+/*input ocupando toda a largura*/
+input{
+    width: 80%;
+    box-sizing: border-box;
+    height: 35px;
+    padding:6px;
+    border-radius: 5px;
+}
+
+label{
+    width: 100px;
+    font-size: 15px;
+}
+
+/*estilizando os campos*/
+.campoCep, .campoLogradouro, .campoBairro, .campoCidade, .campoEstado{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+/*estilizando campo id input*/
+#cep,#logradouro, #bairro, #localidade, #estado{
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    
+
+}
+
+
+
+
+/*estilizando button*/
+button{
+    padding: 6px 12px;
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    color: rgb(0, 0, 0);
+    background-color: #b5c0ab;
+    font-size: 15px;
+
+}
+
+button:hover{
+    background-color: rgb(3, 19, 2);
+    color: #ffffff;
+}
