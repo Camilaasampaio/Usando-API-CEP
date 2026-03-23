@@ -1,5 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    background-color: #f4f6f8;
 }
 
 main{
@@ -8,60 +20,72 @@ main{
     justify-content: center;
     min-height: 100vh;
     padding: 5px;
-    
-
-}.cadastro{
+}
+.cadastro{
     display: flex;
     gap:20px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(30, 70, 70);
+    background-color: #ffffff;
     flex-wrap: wrap;
-    color: #ffffff;
+    color: #0f0f0f;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     padding: 50px;
     font-size: 15px;
     border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08)
     
 }
 
+h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #1f2937;
+    text-align: center;
+}
 
 /*input ocupando toda a largura*/
 input{
-    width: 80%;
+    width: 100%;
     box-sizing: border-box;
     height: 35px;
-    padding:6px;
-    border-radius: 5px;
+    padding:10px 12px; 
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    transition: 0.2s;
+    outline: none;
+    font-size: 14px;
+}
+
+inpu:focus{
+    border-color: #10b981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
 }
 
 label{
-    width: 100px;
+    display: inline-block;
+    width: 110px;
     font-size: 15px;
+    margin-bottom: 5px;
+    color:#374151 ;
+    margin-right: 10px;
 }
 
 /*estilizando os campos*/
-.campoCep, .campoLogradouro, .campoBairro, .campoCidade, .campoEstado{
+.campoCep, 
+.campoLogradouro,
+.campoBairro, 
+.campoCidade,
+.campoEstado{
     padding: 5px;
     display: flex;
     flex-direction: row;
     width: 80%;
     justify-content: center;
     align-items: center;
-
-
 }
-/*estilizando campo id input*/
-#cep,#logradouro, #bairro, #localidade, #estado{
-    border-radius: 5px;
-    border: 2px solid #ffffff;
-    
-
-}
-
-
 
 
 /*estilizando button*/
@@ -75,13 +99,20 @@ button{
     border-radius: 5px;
     border: none;
     height: 35px;
-    color: rgb(0, 0, 0);
-    background-color: #b5c0ab;
+    color:#fff;
+    background-color: #10b981;
     font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
 
 }
 
 button:hover{
-    background-color: rgb(3, 19, 2);
-    color: #ffffff;
+    background-color: #059669;
+}
+
+button:disabled{
+    background-color: #9ca3af;
+    cursor: not-allowed;
 }
